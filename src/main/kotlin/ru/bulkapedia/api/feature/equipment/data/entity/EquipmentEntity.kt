@@ -2,7 +2,7 @@ package ru.bulkapedia.api.feature.equipment.data.entity
 
 import jakarta.persistence.*
 import ru.bulkapedia.api.feature.gear.data.entity.GearEntity
-import ru.bulkapedia.api.feature.hero.HeroEntity
+import ru.bulkapedia.api.feature.hero.data.HeroEntity
 import ru.bulkapedia.api.feature.user.data.UserEntity
 
 @Entity

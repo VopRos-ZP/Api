@@ -1,11 +1,12 @@
-package ru.bulkapedia.api.feature.hero
+package ru.bulkapedia.api.feature.hero.domain
 
 import jakarta.persistence.*
-import ru.bulkapedia.api.feature.hero.domain.HeroStatType
+import ru.bulkapedia.api.feature.hero.data.HeroEntity
 
 @Entity
-@Table(name = "hero_stats")
-class HeroStat(
+@Table(name = "weapon_stats")
+class WeaponStat(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
@@ -19,11 +20,12 @@ class HeroStat(
     val mode: HeroMode? = null,
 
     @Enumerated(EnumType.STRING)
-    val statType: HeroStatType,
+    @Column(name = "stat_type", nullable = false)
+    val statType: WeaponStatType,
 
     @Column(nullable = false)
     val level: Int,
 
     @Column(nullable = false)
-    val value: Long
+    val value: Double,
 )

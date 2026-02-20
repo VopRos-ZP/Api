@@ -7,7 +7,7 @@ import ru.bulkapedia.api.feature.gear.domain.GearCell
 import ru.bulkapedia.api.feature.gear.domain.GearDto
 import ru.bulkapedia.api.feature.gear.domain.GearService
 import ru.bulkapedia.api.feature.gear.domain.GearSet
-import ru.bulkapedia.api.feature.hero.HeroRepository
+import ru.bulkapedia.api.feature.hero.data.HeroRepository
 
 @Service
 class GearServiceImpl(

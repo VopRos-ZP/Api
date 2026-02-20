@@ -1,4 +1,4 @@
-package ru.bulkapedia.api.feature.hero
+package ru.bulkapedia.api.feature.hero.domain
 
 import jakarta.persistence.CascadeType
 import jakarta.persistence.Entity
@@ -9,6 +9,7 @@ import jakarta.persistence.Id
 import jakarta.persistence.JoinColumn
 import jakarta.persistence.ManyToOne
 import jakarta.persistence.Table
+import ru.bulkapedia.api.feature.hero.data.HeroEntity
 
 @Entity
 @Table(name = "hero_modes")

@@ -1,4 +1,4 @@
-package ru.bulkapedia.api.feature.hero
+package ru.bulkapedia.api.feature.hero.data
 
 import org.springframework.data.jpa.repository.JpaRepository
 import ru.bulkapedia.api.feature.hero.domain.HeroFraction

@@ -9,7 +9,7 @@ import ru.bulkapedia.api.feature.equipment.data.repository.EquipmentRepository
 import ru.bulkapedia.api.feature.gear.data.GearRepository
 import ru.bulkapedia.api.feature.equipment.domain.EquipmentDto
 import ru.bulkapedia.api.feature.equipment.domain.EquipmentService
-import ru.bulkapedia.api.feature.hero.HeroRepository
+import ru.bulkapedia.api.feature.hero.data.HeroRepository
 import ru.bulkapedia.api.feature.user.data.UserRepository
 
 @Service

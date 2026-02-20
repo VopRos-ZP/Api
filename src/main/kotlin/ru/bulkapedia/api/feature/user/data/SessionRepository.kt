@@ -8,7 +8,7 @@ interface SessionRepository : JpaRepository<SessionEntity, Long> {
     fun findByTokenIdAndIsValidTrue(tokenId: String): SessionEntity?
 
     @Modifying
-    @Query("UPDATE SessionEntity s SET s.isValid = false WHERE s.user.id = :userId AND s.id = :sessionId")
+    @Query("UPDATE sessions SET is_valid = false WHERE user_id = :userId AND id = :sessionId", nativeQuery = true)
     fun invalidateSession(userId: Long, sessionId: Long)
 
     @Modifying

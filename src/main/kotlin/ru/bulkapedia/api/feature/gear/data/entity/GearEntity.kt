@@ -16,7 +16,7 @@ import jakarta.persistence.Table
 import ru.bulkapedia.api.feature.equipment.data.entity.EquipmentEntity
 import ru.bulkapedia.api.feature.gear.domain.GearCell
 import ru.bulkapedia.api.feature.gear.domain.GearSet
-import ru.bulkapedia.api.feature.hero.HeroEntity
+import ru.bulkapedia.api.feature.hero.data.HeroEntity
 
 @Entity
 @Table(name = "gears")

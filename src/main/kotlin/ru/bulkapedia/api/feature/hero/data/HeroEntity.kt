@@ -1,4 +1,4 @@
-package ru.bulkapedia.api.feature.hero
+package ru.bulkapedia.api.feature.hero.data
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

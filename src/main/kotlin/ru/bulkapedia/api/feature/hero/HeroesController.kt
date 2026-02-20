@@ -11,7 +11,7 @@ import ru.bulkapedia.api.feature.hero.domain.WeaponType
 import ru.bulkapedia.api.utils.StaticResource
 
 @RestController
-@RequestMapping("/api/v1/heroes")
+@RequestMapping("api/v1/heroes")
 class HeroesController(
     private val heroService: HeroService,
 ) {
@@ -27,12 +27,11 @@ class HeroesController(
     fun getAll(
         @RequestParam(required = false) fraction: HeroFraction? = null,
         @RequestParam(required = false) weaponType: WeaponType? = null
-    ): ResponseEntity<List<HeroDto>> {
-        val heroes = heroService.fetchAll(
+    ): List<HeroDto> {
+        return heroService.fetchAll(
             fraction = fraction,
             weaponType = weaponType
         )
-        return ResponseEntity.ok(heroes)
     }
 
 }
