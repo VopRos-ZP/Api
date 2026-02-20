@@ -1,0 +1,19 @@
+package ru.bulkapedia.api.feature.hero.domain
+
+enum class WeaponStatType {
+    DAMAGE_PER_SHOT,
+    HEALTH_DAMAGE_MODIFIER,
+    ARMOR_PENETRATION,
+    PIERCING_POWER,
+    ARMOR_DAMAGE_MODIFIER,
+    FIRE_RATE,
+    RELOAD_TIME,
+    MAGAZINE_SIZE,
+    FIRING_RANGE,
+    AIMED_FIRE_RANGE,
+    FIRE_SPREAD,
+    FIRE_SPREAD_WHILE_MOVING,
+    AIMED_FIRE_SPREAD,
+    AIMING_TIME,
+    SPREAD_FACTOR;
+}

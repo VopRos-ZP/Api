@@ -1,0 +1,29 @@
+package ru.bulkapedia.api.feature.hero
+
+import jakarta.persistence.*
+import ru.bulkapedia.api.feature.hero.domain.HeroStatType
+
+@Entity
+@Table(name = "hero_stats")
+class HeroStat(
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long = 0,
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = [CascadeType.REMOVE])
+    @JoinColumn(name = "hero_id")
+    val hero: HeroEntity,
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "mode_id")
+    val mode: HeroMode? = null,
+
+    @Enumerated(EnumType.STRING)
+    val statType: HeroStatType,
+
+    @Column(nullable = false)
+    val level: Int,
+
+    @Column(nullable = false)
+    val value: Long
+)
